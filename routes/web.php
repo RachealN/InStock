@@ -20,3 +20,4 @@ Route::get('/', function () {
     $user = User::factory()->create();
     return (new ImportantStockUpdate(Stock::first()))->toMail($user);
 });
+
