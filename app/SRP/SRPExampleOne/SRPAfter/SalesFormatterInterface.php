@@ -1,8 +1,6 @@
 <?php
 
-namespace App\SRP;
-
-use Carbon\Carbon;
+namespace App\SRP\SRPExampleOne\SRPAfter;
 
 interface SalesFormatterInterface
 {

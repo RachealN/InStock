@@ -1,6 +1,6 @@
 <?php
 
-namespace App\SRP;
+namespace App\SRP\SRPExampleOne\SRPAfter;
 
 use Carbon\Carbon;
 

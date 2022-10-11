@@ -1,5 +1,5 @@
 <?php
-namespace App\SRP;
+namespace App\SRP\SRPExampleOne\SRPAfter;
 
 class SalesOutputFormatter implements SalesFormatterInterface
 {
