@@ -2,7 +2,6 @@
 
 namespace App\SolidPrinciples\OCP\OcpBefore;
 
-use App\OCP\OcpBefore\Exception;
 
 class Tester
 {
@@ -24,13 +23,13 @@ class ProjectManagement
 {
     public function process($member)
     {
-        if ($member instanceof \App\OCP\OcpBefore\Programmer) {
+        if ($member instanceof Programmer) {
             $member->code();
-        } elseif ($member instanceof \App\OCP\OcpBefore\Tester) {
+        } elseif ($member instanceof Tester) {
             $member->test();
         };
 
-        throw new Exception('Invalid input member');
+        throw new \Exception('Invalid input member');
 
     }
 }
