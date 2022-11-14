@@ -9,3 +9,7 @@ class App
         $logger->log($data);
     }
 }
+
+
+//$app = new App();
+//$app->log('Log some new Information here', new LogToDatabase());
