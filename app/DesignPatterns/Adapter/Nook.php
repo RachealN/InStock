@@ -6,12 +6,16 @@ class Nook implements eReaderInterface {
 
     public function turnOn()
     {
-        return 'turn the Nook on';
+        var_dump('turn the Nook on');
+
+        return $this;
     }
 
     public function pressNextButton()
     {
-        return'press the next button on the Nook';
+        var_dump('press the next button on the Nook');
+
+        return $this;
     }
 
 }

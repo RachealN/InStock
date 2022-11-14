@@ -6,11 +6,15 @@ class Kindle implements eReaderInterface
 {
     public function turnOn()
     {
-        return "Turn on Kindle ";
+        var_dump('Turn on Kindle');
+
+        return $this;
     }
 
     public function pressNextButton()
     {
-        return "Press the next button - kindle";
+        var_dump('Press the next button - kindle');
+
+        return $this;
     }
 }
