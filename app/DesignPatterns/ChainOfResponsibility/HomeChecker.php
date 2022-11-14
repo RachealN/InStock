@@ -2,7 +2,22 @@
 
 namespace App\DesignPatterns\ChainOfResponsibility;
 
-interface HomeChecker
+abstract class HomeChecker
 {
-    public function check(HomeStatus $home);
+    protected $successor;
+
+    public abstract function check(HomeStatus $home);
+
+    public function succeedWith(HomeChecker $successor)
+    {
+        $this->successor = $successor;
+    }
+
+    public function next(HomeStatus $home)
+    {
+        if($this->successor)
+        {
+            $this->successor->check($home);
+        }
+    }
 }

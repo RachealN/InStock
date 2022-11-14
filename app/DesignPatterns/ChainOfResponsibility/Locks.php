@@ -4,7 +4,7 @@ namespace App\DesignPatterns\ChainOfResponsibility;
 
 use Exception;
 
-class Locks implements HomeChecker
+class Locks extends HomeChecker
 {
    public function check(HomeStatus $home)
    {
