@@ -18,7 +18,7 @@ class OilChange implements CartService {
 
     public function getDescription()
     {
-        $description = ["Servicio de cambio de aceite"];
+        $description = ["description for car service......"];
 
         if ($this->cartService instanceof CartService)
         {
